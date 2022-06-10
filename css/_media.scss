@@ -1,0 +1,325 @@
+@media (max-width: 1024px) {
+   h1{
+      font-size: 45px !important;
+   }
+   h2{
+      font-size: 30px !important;
+   }
+   h3{
+      font-size: 15px !important;
+   }
+   .contain{
+      padding: 0px 15px !important;
+   }
+      .menu-navigation{
+         ul{
+            margin-right: 40px !important;
+
+            li{
+               margin-right: 30px !important;
+            }
+         }
+      }
+      .features-item-text{
+         margin-top: 60px !important;
+      }
+
+      .network-map{
+         img{
+            width: 100%;
+         }
+      }
+      .pricing-item{
+         width: 300px !important;
+         &-text{
+            .list{
+               margin-left: 65px !important;
+            }
+         }
+      }
+      
+
+   .swiper-button-prev{
+      left: 85% !important;
+   }
+}
+
+@media (max-width: 768px){
+   .menu{
+      &-navigation{
+         position: fixed;
+         flex-direction: column;
+         top: 0;
+         left: -100%;
+         width: 50%;
+         height: 120vh;
+         padding: 20px 15px;
+         background: rgba($color: #DCDCDC, $alpha: 0.8);
+         transition: all 0.6s;
+         z-index: 100;
+         &-active{
+            left: 0;
+         }
+         ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
+            li{
+               display: block;
+               margin-bottom: 70px;
+               font-size: 25px !important;
+            }
+         }
+      }
+   }
+   .hamgurger{
+      display: block !important;
+      position: fixed;
+      right: 20px;
+      top: 70px;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 12px;
+      z-index: 100;
+      span{
+         display: block;
+         height: 2px;
+         width: 100%;
+         background-color: #000;
+         margin-bottom: 2px;
+         transition: all 0.6s;
+      }
+      &-active{
+         span{
+            margin-bottom: -2px;
+            &:nth-child(1){
+               transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2){
+               display: none;
+            }
+            &:nth-child(3){
+               transform: translateY(3px) rotate(45deg);
+            }
+         }
+      }
+   }
+
+   .promo{
+      text-align: center;
+      margin-top: 60px;
+      &-item{
+         flex-direction: column;
+         &-img{
+            margin-top: 40px;
+         }
+      }
+   }
+
+   .features{
+      text-align: center;
+      &-item{
+         flex-direction: column;
+         &-img{
+            margin-right: 0px !important;
+         }
+         &-text{
+               ::before{
+                  left: 30% !important;
+               }
+            }
+         }
+      }
+
+      .pricing{
+         .shell{
+            flex-direction: column;
+            align-items: center;
+            .pricing-item{
+               margin-top: 20px;
+            }
+         }
+      }
+
+      .partners{
+         &-item{
+            text-align: center;
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 20px;
+         }
+      }
+      .swiper-button-prev {
+         left: 75% !important;
+      }
+      footer{
+         .shell{
+            flex-direction: column;
+            .info{
+               order: 2;
+            }
+            .commercial{
+               order: 1;
+            }
+         }
+
+      }
+   }
+
+@media (max-width: 425px){
+   h1{
+      font-size: 40px !important;
+   }
+   h2{
+      font-size: 27px !important;
+   }
+
+   .menu{
+      display: flex;
+      flex-direction: column;
+   }
+      .menu-navigation-reg{
+         margin-top: 30px;
+      }
+   .promo{
+      margin-top: 60px !important;
+   }
+   .promo-item-img{
+      img{
+         width: 100%;
+      }
+   }
+
+   .statistics{
+      margin-top: 60px !important; 
+      .shell{
+         flex-direction: column;
+      }
+      &-item{
+         margin-top: 20px;
+      }
+   }
+   .features{
+      margin-top: 60px !important;
+   }
+   .features-item-img{
+      img{
+         width: 100%;
+      }
+   }
+   .features-item-text{
+      ::before{
+         left: 15% !important;
+      }
+   }
+   .pricing{
+      margin-top: 60px !important;
+   }
+
+   .partners {
+      &-item {
+         grid-template-columns: 1fr  !important;
+         row-gap: 50px !important;
+      }
+   }
+      .swiper-button-prev{
+         left: 60% !important;
+      }
+   .network{
+      margin-top: 60px !important;
+   }
+   .network-map{
+      margin-top: 60px !important;
+   }
+   .subscribe{
+      text-align: center;
+   }
+   .subscribe-item{
+      padding: 30px 70px 0px 70px !important;   
+      flex-direction: column;
+      &-btn{
+         margin-top: 40px;
+      }
+   }
+   footer{
+      .commercial{
+         flex-direction: column;
+         .earn{
+            margin-left: 0 !important;
+         }
+      }
+   }
+}
+
+@media (max-width: 425px){
+   h3{
+      font-size: 14px !important;
+   }
+   .features-item-text {
+         ::before {
+            left: 11% !important;
+         }
+      }
+   .subscribe-item-btn{
+      button{
+         right: -11% !important;
+      }
+   }
+      .menu-navigation {
+         ul {
+            li {
+               font-size: 17px !important;
+               margin-right: 0px !important;
+            }
+         }
+      }
+}
+
+@media (max-width: 320px){
+   h1 {
+         font-size: 32px !important;
+      }
+   .menu-navigation-reg{
+      margin-right: 0 !important;
+   }
+   .statistics{
+      .shell{
+         padding: 0 50px !important;
+      }
+   }
+   .swiper-button-prev {
+      left: 0% !important;
+   }
+   .features-item-text {
+         ::before {
+            left: 1% !important;
+         }
+      }
+   .data-name{
+      .name{
+         font-size: 16px !important;
+      }
+   }
+      .comments-item{
+         height: 280px !important;
+      }
+   .swiper-pagination{
+      display: none;
+   }
+   .subscribe-item-btn {
+      button {
+         right: -30% !important;
+      }
+   }
+   .menu-navigation{
+      ul{
+         li{
+            font-size: 17px !important;
+            margin-right: 0px !important;
+         }
+      }
+   }
+}
